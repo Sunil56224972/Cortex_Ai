@@ -1,0 +1,161 @@
+<svg viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" width="900" height="200">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&amp;family=Share+Tech+Mono&amp;display=swap');
+
+      .bg { fill: #000000; }
+      .grid-line { stroke: rgba(0,255,65,0.07); stroke-width: 1; fill: none; }
+
+      .ring {
+        fill: none;
+        stroke: #00ff41;
+        stroke-width: 1;
+        transform-origin: 100px 100px;
+        animation: ringPulse 3s ease-out infinite;
+      }
+      .ring1 { animation-delay: 0s; }
+      .ring2 { animation-delay: 0.8s; }
+      .ring3 { animation-delay: 1.6s; }
+
+      @keyframes ringPulse {
+        0%   { r: 30px; opacity: 0; }
+        15%  { opacity: 0.6; }
+        100% { r: 90px; opacity: 0; }
+      }
+
+      .brain {
+        font-size: 64px;
+        animation: brainFloat 2.5s ease-in-out infinite;
+        transform-origin: 100px 100px;
+      }
+      @keyframes brainFloat {
+        0%,100% { transform: translateY(0px); filter: drop-shadow(0 0 14px #00ff41); }
+        50%      { transform: translateY(-6px); filter: drop-shadow(0 0 28px #00ff41) drop-shadow(0 0 50px #00ffff); }
+      }
+
+      .title {
+        font-family: 'Orbitron', 'Share Tech Mono', monospace;
+        font-size: 52px;
+        font-weight: 900;
+        letter-spacing: 8px;
+        fill: url(#titleGrad);
+        animation: titleGlow 3s ease-in-out infinite;
+      }
+      @keyframes titleGlow {
+        0%,100% { filter: drop-shadow(0 0 8px #00ff41); }
+        50%      { filter: drop-shadow(0 0 20px #00ffff) drop-shadow(0 0 40px #00ff41); }
+      }
+
+      .subtitle {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 13px;
+        fill: #00ffff;
+        letter-spacing: 5px;
+        animation: subFade 2s ease-in-out infinite alternate;
+      }
+      @keyframes subFade {
+        from { opacity: 0.5; }
+        to   { opacity: 1; }
+      }
+
+      .tagline {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 11px;
+        fill: rgba(200,255,200,0.45);
+        letter-spacing: 3px;
+      }
+
+      .scan {
+        fill: none;
+        stroke: rgba(0,255,65,0.15);
+        stroke-width: 1;
+        animation: scanMove 4s linear infinite;
+      }
+      @keyframes scanMove {
+        0%   { transform: translateY(-200px); }
+        100% { transform: translateY(400px); }
+      }
+
+      .corner { stroke: #00ff41; stroke-width: 1.5; fill: none; opacity: 0.6; }
+
+      .dot {
+        fill: #00ff41;
+        animation: dotBlink 1.2s step-end infinite;
+      }
+      @keyframes dotBlink { 50% { opacity: 0; } }
+
+      .side-text {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 9px;
+        fill: rgba(0,255,65,0.3);
+        letter-spacing: 2px;
+      }
+    </style>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00ff41"/>
+      <stop offset="40%"  stop-color="#00ffff"/>
+      <stop offset="75%"  stop-color="#ff00ff"/>
+      <stop offset="100%" stop-color="#ffe600"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="rgba(0,255,65,0.06)"/>
+      <stop offset="100%" stop-color="rgba(0,0,0,0)"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="200" class="bg"/>
+  <rect width="900" height="200" fill="url(#bgGlow)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="25"  x2="900" y2="25"  class="grid-line"/>
+  <line x1="0" y1="50"  x2="900" y2="50"  class="grid-line"/>
+  <line x1="0" y1="75"  x2="900" y2="75"  class="grid-line"/>
+  <line x1="0" y1="100" x2="900" y2="100" class="grid-line"/>
+  <line x1="0" y1="125" x2="900" y2="125" class="grid-line"/>
+  <line x1="0" y1="150" x2="900" y2="150" class="grid-line"/>
+  <line x1="0" y1="175" x2="900" y2="175" class="grid-line"/>
+  <line x1="225" y1="0" x2="225" y2="200" class="grid-line"/>
+  <line x1="450" y1="0" x2="450" y2="200" class="grid-line"/>
+  <line x1="675" y1="0" x2="675" y2="200" class="grid-line"/>
+
+  <!-- Scan line -->
+  <line x1="0" y1="0" x2="900" y2="0" class="scan"/>
+
+  <!-- Corner brackets -->
+  <polyline points="16,16 16,36 36,36" class="corner"/>
+  <polyline points="884,16 884,36 864,36" class="corner"/>
+  <polyline points="16,184 16,164 36,164" class="corner"/>
+  <polyline points="884,184 884,164 864,164" class="corner"/>
+
+  <!-- Pulse rings around brain -->
+  <circle cx="100" cy="100" class="ring ring1" r="30"/>
+  <circle cx="100" cy="100" class="ring ring2" r="30"/>
+  <circle cx="100" cy="100" class="ring ring3" r="30"/>
+
+  <!-- Brain icon -->
+  <text x="100" y="118" text-anchor="middle" class="brain">🧠</text>
+
+  <!-- Vertical separator -->
+  <line x1="192" y1="30" x2="192" y2="170" stroke="rgba(0,255,65,0.2)" stroke-width="1"/>
+
+  <!-- CORTEX title -->
+  <text x="555" y="105" text-anchor="middle" class="title">CORTEX</text>
+
+  <!-- VERSION -->
+  <text x="555" y="132" text-anchor="middle" class="subtitle">V 5 . 0   N E U R O N   E D I T I O N</text>
+
+  <!-- Tagline -->
+  <text x="555" y="155" text-anchor="middle" class="tagline">" MAXIMUM TRUTH + MAXIMUM FUN "</text>
+
+  <!-- Status dot -->
+  <circle cx="795" cy="28" r="4" class="dot"/>
+  <text x="806" y="33" class="side-text">ONLINE</text>
+
+  <!-- Side labels -->
+  <text x="30" y="190" class="side-text">GEMINI 2.0 FLASH</text>
+  <text x="720" y="190" class="side-text">INDIA KA AI TERMINAL</text>
+
+  <!-- Bottom line -->
+  <line x1="0" y1="199" x2="900" y2="199" stroke="url(#titleGrad)" stroke-width="1.5"/>
+</svg>

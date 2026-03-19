@@ -1,0 +1,149 @@
+<svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" width="700" height="420">
+  <defs>
+    <style>
+      .bg { fill: #030a03; }
+      .bar { fill: #0a1a0a; }
+      .border { stroke: rgba(0,255,65,0.3); stroke-width: 1; fill: none; }
+
+      .dot-r { fill: #ff5f57; }
+      .dot-y { fill: #febc2e; }
+      .dot-g { fill: #28c840; }
+
+      .title-bar {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 11px;
+        fill: #2a5a2a;
+        letter-spacing: 1px;
+      }
+
+      .line {
+        font-family: 'Share Tech Mono', monospace;
+        font-size: 12.5px;
+      }
+      .lp  { fill: #00ff41; }
+      .lc  { fill: #00ffff; }
+      .lo  { fill: #b8ffb8; }
+      .lw  { fill: #ffe600; }
+      .lm  { fill: #ff00ff; }
+      .ld  { fill: #2a5a2a; }
+      .lr  { fill: #ff003c; }
+
+      .cursor {
+        fill: #00ff41;
+        animation: blink 0.9s step-end infinite;
+      }
+      @keyframes blink { 50% { opacity: 0; } }
+
+      /* Line-by-line type-in animations */
+      .l01 { animation: showLine 0.1s 0.5s forwards;  opacity: 0; }
+      .l02 { animation: showLine 0.1s 1.0s forwards;  opacity: 0; }
+      .l03 { animation: showLine 0.1s 1.5s forwards;  opacity: 0; }
+      .l04 { animation: showLine 0.1s 2.0s forwards;  opacity: 0; }
+      .l05 { animation: showLine 0.1s 2.6s forwards;  opacity: 0; }
+      .l06 { animation: showLine 0.1s 3.1s forwards;  opacity: 0; }
+      .l07 { animation: showLine 0.1s 3.7s forwards;  opacity: 0; }
+      .l08 { animation: showLine 0.1s 4.0s forwards;  opacity: 0; }
+      .l09 { animation: showLine 0.1s 4.4s forwards;  opacity: 0; }
+      .l10 { animation: showLine 0.1s 5.0s forwards;  opacity: 0; }
+      .l11 { animation: showLine 0.1s 5.5s forwards;  opacity: 0; }
+      .l12 { animation: showLine 0.1s 5.9s forwards;  opacity: 0; }
+      .l13 { animation: showLine 0.1s 6.3s forwards;  opacity: 0; }
+      .l14 { animation: showLine 0.1s 6.8s forwards;  opacity: 0; }
+      .l15 { animation: showLine 0.1s 7.2s forwards;  opacity: 0; }
+      .l16 { animation: showLine 0.1s 7.7s forwards;  opacity: 0; }
+      .l17 { animation: showLine 0.1s 8.1s forwards;  opacity: 0; }
+      .l18 { animation: showLine 0.1s 8.6s forwards;  opacity: 0; }
+      .l19 { animation: showLine 0.1s 9.0s forwards;  opacity: 0; }
+      .l20 { animation: showLine 0.1s 9.5s forwards;  opacity: 0; }
+      .cur { animation: showLine 0.1s 9.6s forwards;  opacity: 0; }
+
+      @keyframes showLine {
+        from { opacity: 0; transform: translateX(-4px); }
+        to   { opacity: 1; transform: translateX(0); }
+      }
+
+      .box-border { stroke: rgba(0,255,65,0.2); stroke-width: 1; fill: rgba(0,255,65,0.02); }
+      .scan-h { stroke: rgba(0,255,65,0.06); stroke-width: 1; fill:none; }
+    </style>
+  </defs>
+
+  <!-- BG -->
+  <rect width="700" height="420" class="bg"/>
+
+  <!-- Scanlines -->
+  <line x1="0" y1="60"  x2="700" y2="60"  class="scan-h"/>
+  <line x1="0" y1="100" x2="700" y2="100" class="scan-h"/>
+  <line x1="0" y1="140" x2="700" y2="140" class="scan-h"/>
+  <line x1="0" y1="180" x2="700" y2="180" class="scan-h"/>
+  <line x1="0" y1="220" x2="700" y2="220" class="scan-h"/>
+  <line x1="0" y1="260" x2="700" y2="260" class="scan-h"/>
+  <line x1="0" y1="300" x2="700" y2="300" class="scan-h"/>
+  <line x1="0" y1="340" x2="700" y2="340" class="scan-h"/>
+  <line x1="0" y1="380" x2="700" y2="380" class="scan-h"/>
+
+  <!-- Terminal border -->
+  <rect x="1" y="1" width="698" height="418" class="border"/>
+
+  <!-- Title bar -->
+  <rect x="1" y="1" width="698" height="38" class="bar"/>
+  <line x1="1" y1="39" x2="699" y2="39" stroke="rgba(0,255,65,0.15)" stroke-width="1"/>
+  <circle cx="22" cy="20" r="6" class="dot-r"/>
+  <circle cx="40" cy="20" r="6" class="dot-y"/>
+  <circle cx="58" cy="20" r="6" class="dot-g"/>
+  <text x="350" y="25" text-anchor="middle" class="title-bar">CORTEX v5.0 — cortex_main</text>
+  <circle cx="672" cy="20" r="4" fill="#00ff41" opacity="0.7"/>
+  <text x="682" y="25" class="title-bar" fill="#00ff41">●</text>
+
+  <!-- Terminal content -->
+
+  <!-- Line 1: logo top -->
+  <text x="22" y="68" class="line lm l01">  ╔═══════════════════════════════════════════╗</text>
+  <!-- Line 2 -->
+  <text x="22" y="88" class="line lm l02">  ║  🧠  C O R T E X  v 5 . 0  N E U R O N  ║</text>
+  <!-- Line 3 -->
+  <text x="22" y="108" class="line lm l03">  ╚═══════════════════════════════════════════╝</text>
+
+  <!-- Line 4: status bar -->
+  <text x="22" y="130" class="line lw l04">  Chat: <tspan class="lc">cortex_main</tspan> | Persona: <tspan class="lm">default</tspan> | Agent: <tspan class="ld">OFF</tspan> | Voice: <tspan class="ld">OFF</tspan></text>
+
+  <!-- Line 5: blank -->
+  <text x="22" y="152" class="line ld l05"> </text>
+
+  <!-- Line 6: prompt + command -->
+  <text x="22" y="172" class="line l06">
+    <tspan class="lp">  [cortex_main] &gt; </tspan><tspan class="lc">/persona hacker</tspan>
+  </text>
+  <!-- Line 7: response -->
+  <text x="22" y="192" class="line lm l07">  Persona switched to: hacker 💀</text>
+
+  <!-- Line 8: blank -->
+  <text x="22" y="212" class="line ld l08"> </text>
+
+  <!-- Line 9: next prompt -->
+  <text x="22" y="232" class="line l09">
+    <tspan class="lp">  [cortex_main] &gt; </tspan><tspan class="lc">explain XSS in 2 lines bhai</tspan>
+  </text>
+  <!-- Line 10: thinking -->
+  <text x="22" y="252" class="line ld l10">  🧠 CORTEX THINKING...</text>
+
+  <!-- Box top -->
+  <rect x="22" y="262" width="656" height="74" class="box-border l11" style="animation: showLine 0.1s 5.5s forwards; opacity:0;"/>
+
+  <!-- Line 11: reply box -->
+  <text x="32" y="282" class="line lo l12">  Bhai, XSS = tere malicious JS ko site inject karna.</text>
+  <!-- Line 12 -->
+  <text x="32" y="302" class="line lo l13">  Victim ka browser run karta hai → cookie steal, done. 🔥</text>
+
+  <!-- Line 13: blank -->
+  <text x="22" y="352" class="line ld l14"> </text>
+
+  <!-- Line 14: agent toggle -->
+  <text x="22" y="372" class="line l15">
+    <tspan class="lp">  [cortex_main] &gt; </tspan><tspan class="lc">/agent</tspan>
+  </text>
+  <text x="22" y="392" class="line l16"><tspan class="lr">  Agent Mode ON 🔥  </tspan><tspan class="lp">  [cortex_main] &gt; </tspan><tspan class="lc">/listen</tspan></text>
+
+  <!-- Cursor -->
+  <rect x="22" y="404" width="9" height="14" class="cursor cur"/>
+
+</svg>

@@ -1,0 +1,19 @@
+<svg viewBox="0 0 900 60" xmlns="http://www.w3.org/2000/svg" width="900" height="60">
+  <defs>
+    <linearGradient id="wg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00ff41" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#00ff41"/>
+      <stop offset="50%"  stop-color="#00ffff"/>
+      <stop offset="80%"  stop-color="#ff00ff"/>
+      <stop offset="100%" stop-color="#ff00ff" stop-opacity="0"/>
+    </linearGradient>
+    <style>
+      .wave { stroke: url(#wg); stroke-width: 1.5; fill: none; animation: wavePulse 3s ease-in-out infinite alternate; }
+      .wave2 { stroke: url(#wg); stroke-width: 0.5; fill: none; opacity: 0.3; animation: wavePulse 3s ease-in-out infinite alternate-reverse; }
+      @keyframes wavePulse { from { opacity: 0.4; } to { opacity: 1; } }
+    </style>
+  </defs>
+  <rect width="900" height="60" fill="#000000"/>
+  <path d="M0,30 C150,10 300,50 450,30 C600,10 750,50 900,30" class="wave"/>
+  <path d="M0,34 C150,14 300,54 450,34 C600,14 750,54 900,34" class="wave2"/>
+</svg>

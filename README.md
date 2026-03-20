@@ -1,9 +1,11 @@
 <div align="center">
 
 <!-- ANIMATED BANNER -->
-<img src="assets/banner.svg" alt="CORTEX v5.0 Banner" width="100%"/>
+<img src="banner.svg" width="100%" alt="Cortex Banner">
 
 <br/>
+
+#
 
 <!-- SHIELD BADGES ROW 1 -->
 ![Python](https://img.shields.io/badge/Python-3.8+-00ff41?style=for-the-badge&logo=python&logoColor=black&labelColor=000000)
@@ -29,7 +31,7 @@
 
 <!-- ANIMATED TERMINAL -->
 <div align="center">
-<img src="assets/terminal.svg" alt="CORTEX Terminal Demo" width="100%"/>
+<img src="terminal.svg" width="100%" alt="Cortex Terminal">
 </div>
 
 ---
@@ -59,7 +61,7 @@
 
 <!-- ANIMATED FEATURES GRID -->
 <div align="center">
-<img src="assets/features.svg" alt="CORTEX Features" width="100%"/>
+<img src="features.svg" width="100%" alt="Cortex Features">
 </div>
 
 ---
@@ -397,7 +399,7 @@ MIT License — free to use, modify, distribute.
 
 <div align="center">
 
-<img src="assets/divider.svg" alt="" width="100%"/>
+<img src="divider.svg" width="100%" alt="Divider">
 
 **Built with 🔥 by [Sunil Dev](https://github.com/Sunil56224972)**
 

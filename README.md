@@ -393,8 +393,13 @@ git push origin feature/your-feature-name
 
 ## 📄 License
 
-MIT License — free to use, modify, distribute.
+<div align="center">
 
+![MIT License](https://img.shields.io/badge/License-MIT-00ff41?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
+
+**MIT LICENSE** — Open Source • Free Forever
+
+</div>
 ---
 
 <div align="center">
